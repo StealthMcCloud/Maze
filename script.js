@@ -71,6 +71,7 @@ const dashie = document.getElementById("dashie")
 
 let start = document.getElementById("start")
 let currentPosition = start;
+currentPosition.appendChild(dashie);
 
 
 
@@ -111,6 +112,7 @@ document.addEventListener('keydown', (event) => {
                 currentPosition = nextMoveRight;
                 setTimeout(function () {
                     alert("You Win!");
+                    
                 }, 1);
             }
             break;
