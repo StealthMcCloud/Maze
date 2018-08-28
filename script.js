@@ -83,6 +83,7 @@ document.addEventListener('keydown', (event) => {
             if (nextMoveUp.dataset.cellType === "floor") {
                 nextMoveUp.appendChild(dashie);
                 currentPosition = nextMoveUp;
+                dashie.style.transform = "rotate(-90deg)"
             }
             break;
         case 'ArrowDown':
@@ -91,6 +92,7 @@ document.addEventListener('keydown', (event) => {
             if (nextMoveDown.dataset.cellType === "floor") {
                 nextMoveDown.appendChild(dashie);
                 currentPosition = nextMoveDown;
+                dashie.style.transform = "rotate(90deg)"
             }
             break;
         case 'ArrowLeft':
@@ -99,6 +101,7 @@ document.addEventListener('keydown', (event) => {
             if (nextMoveLeft.dataset.cellType === "floor") {
                 nextMoveLeft.appendChild(dashie);
                 currentPosition = nextMoveLeft;
+                dashie.style.transform = "scaleX(-1)"
             }
             break;
         case 'ArrowRight':
@@ -107,6 +110,7 @@ document.addEventListener('keydown', (event) => {
             if (nextMoveRight.dataset.cellType === "floor") {
                 nextMoveRight.appendChild(dashie);
                 currentPosition = nextMoveRight;
+                dashie.style.transform = "rotate(0deg)"
             } else if (nextMoveRight.dataset.cellType === "end") {
                 nextMoveRight.appendChild(dashie);
                 currentPosition = nextMoveRight;

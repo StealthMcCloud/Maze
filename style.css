@@ -28,6 +28,11 @@ main {
     margin-right: auto;
     justify-content: center;
     align-items: center;
+    background-image: url("Photos/ponyville.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 61.75% 100%;
+
 }
 
 .mazeRow {
@@ -37,7 +42,10 @@ main {
 .borderWall {
     height: 35px;
     width: 35px;
-    background: black;
+    background-image: url("Photos/stormClouds.gif");
+    background-repeat: no-repeat;
+    background-size: 35px 35px;
+    opacity: .5;
 }
 
 #start {
@@ -56,4 +64,10 @@ main {
     background-image: url("Photos/rainbowfinish.gif");
     background-repeat: no-repeat;
     background-size: 100% 100%;
+}
+
+#winner {
+    background-image: url("Photos/Winner.gif");
+    height: auto;
+    width: auto;
 }
