@@ -114,6 +114,7 @@ document.addEventListener('keydown', (event) => {
             } else if (nextMoveRight.dataset.cellType === "end") {
                 nextMoveRight.appendChild(dashie);
                 currentPosition = nextMoveRight;
+                dashie.style.transform = "rotate(0deg)"
                 setTimeout(function () {
                     alert("You Win!");
                     
